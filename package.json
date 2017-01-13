@@ -1,0 +1,83 @@
+// https://docs.npmjs.com/files/package.json
+// https://travis-ci.org/pathaugen/pmd-nodejs-todo
+{
+	"name": "pmd-nodejs-todo",
+	"version": "1.0.0", // https://docs.npmjs.com/misc/semver
+	"description": "Production Media Design Node.js todo list application.",
+	"keywords":"todo",
+	"homepage":"https://github.com/pathaugen/pmd-nodejs-todo",
+	"bugs": {
+		"url": "https://github.com/pathaugen/pmd-nodejs-todo/issues",
+		"email": "pathaugen@gmail.com"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": [
+			{
+				"name": "Patrick Haugen",
+				"email": "pathaugen@gmail.com",
+				"url": "http://www.pathaugen.com"
+			}
+		],
+	"contributors": [
+		{
+			"name": "Patrick Haugen",
+			"email": "pathaugen@gmail.com",
+			"url": "http://www.pathaugen.com"
+		}
+	],
+	// files
+	"main": "todo.js",
+	// bin
+	"man": "./man/doc.1",
+	// directories
+	// directories.lib
+	// directories.bin
+	// directories.man
+	// directories.doc
+	// directories.example
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pathaugen/pmd-nodejs-todo.git",
+	},
+	"scripts": {
+		"start": "node todo.js",
+		"monitor": "nodemon todo.js",
+		"deploy": "gcloud app deploy app.yaml",
+		"test": "mocha test/index.js -t 30000"
+	},
+	// config
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"devDependencies": {
+		"mocha": "^3.0.2",
+		"nodejs-repo-tools": "git+https://git@github.com/GoogleCloudPlatform/nodejs-repo-tools.git",
+		"supertest": "^2.0.0"
+	},
+	// peerDependencies
+	// bundledDependencies
+	// optionalDependencies
+	"engines": {
+		"node": ">=4.3.2"
+	},
+	// engineStrict
+	// os
+	// cpu
+	// preferGlobal
+	"private": true,
+	// publishConfig
+	
+	
+	"semistandard": {
+		"globals": [
+			"after",
+			"afterEach",
+			"before",
+			"beforeEach",
+			"describe",
+			"it"
+		]
+	},
+	
+	
+}
