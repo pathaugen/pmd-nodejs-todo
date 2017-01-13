@@ -1,6 +1,6 @@
 
 Current Version Deployed to Google App Engine:
-2017-01-xx (undeployed)
+1.0.0 (undeployed)
 
 ---------- ---------- ---------- ---------- ----------
 
